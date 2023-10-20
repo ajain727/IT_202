@@ -1,11 +1,60 @@
 const receptionists = [
     {
-        firstName: "Jane",
-        lastName: "Doe",
-        password: "JaneDoe@1967",
+        firstName: "Peter",
+        lastName: "Parker",
+        password: "PeterParker@1967",
         id: "9876",
-        email: "jdoe@gmail.com",
-    }
+        email: "ppaker@gmail.com",
+    },
+    {
+        firstName: "John",
+        lastName: "Cena",
+        password: "JohnCena@1977",
+        id: "9877",
+        email: "cenaj@gmail.com",
+    },
+    {
+        firstName: "Sharukh",
+        lastName: "Khan",
+        password: "Badshah@100",
+        id: "9878",
+        email: "kingkhan@gmail.com",
+    },
+    {
+        firstName: "Akshay",
+        lastName: "Kumar",
+        password: "KumarAkshay@546",
+        id: "9879",
+        email: "Khiladi13@gmail.com",
+    },
+    {
+        firstName: "Saif",
+        lastName: "Ali",
+        password: "Kareena@214",
+        id: "9880",
+        email: "patodi16@gmail.com",
+    },
+    {
+        firstName: "Salman",
+        lastName: "Khan",
+        password: "FootpathDear@2015",
+        id: "9881",
+        email: "blackbuck3@gmail.com",
+    },
+    {
+        firstName: "Sanjay",
+        lastName: "Dutt",
+        password: "PapaKiProtection@47",
+        id: "9882",
+        email: "sdutt@gmail.com",
+    },
+    {
+        firstName: "Maura",
+        lastName: "Deek",
+        password: "MauraDeek@202",
+        id: "9883",
+        email: "mdeek@gmail.com",
+    },
 ];
 function toggleEmailRequiredText() {
     const emailConfirmationCheckbox = document.getElementById("email_confirmation");

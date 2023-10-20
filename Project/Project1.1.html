@@ -5,57 +5,61 @@
             <title>Receptionist Login</title>
         </head>
         <body>
-            <div class="container">
+        <div class="container">
             <h2>House of Health</h2>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="first_name">First Name:</label>
-                        <input type="text" id="first_name" name="first_name" placeholder = "Example: Peter" required>
-                        <div>
-                            <div class="form-group">
-                                <label for="last_name">Last Name: </label>
-                                <input type="text" id="last_name" name="last _name" placeholder = "Example: Parker" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password:</label>
-                                <input type="password" id="password" name="password" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="receptionist_id">Receptionist ID:</label>
-                                <input type="number" id="receptionist_id" name="receptionist_id" placeholder = "Example: 1234" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number: </label>
-                                <input type="tel" id="phone" name="phone" placeholder="Example: 123-456-7890" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email"> Email Address: </label>
-                                <input type="email" id="email" name="email" placeholder = "Example: abcd@gmail.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email confirmation">Check box to request an Email Confirmation:</label>
-                                <input type="checkbox" id="email confirmation" name="email confirmation">
-                            </div>
-                            <div class="form-group">
-                                <label for="transaction_type">Transaction Type:</label>
-                                <select id="transaction_type" name="transaction_type">
-                                        <option value="Search Account">Search Account</option>
-                                        <option value="Book Appointment">Book an Appointment</option>
-                                        <option value="Cancel Appointment">Cancel an Appointment</option>
-                                        <option value="Request Procedure">Request a Procedure</option>
-                                        <option value="Cancel Procedure">Cancel a Procedure</option>
-                                        <option value="Update Information">Update Patient Information</option>
-                                        <option value="Create Account">Create a New Account</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" onclick= return"validate();">Submit</button>
-                                <button type="reset">Reset</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" placeholder = "Example: Peter">
+                    <span class="required-text">REQUIRED</span>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name"  placeholder = "Example: Parker">
+                    <span class="required-text">REQUIRED</span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder = "Example: Abcd@567">
+                    <span class="required-text">REQUIRED</span>
+                </div>
+                <div class="form-group">
+                    <label for="receptionist_id">Receptionist ID:</label>
+                    <input type="number" id="receptionist_id" name="receptionist_id" placeholder = "Example: 4321">
+                    <span class="required-text">REQUIRED</span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"  placeholder="Example: 908-765-4321">
+                    <span class="required-text">REQUIRED</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder = "Example: Peter123@gmail.com">
+                    <span class="required-text" style="display: none;">REQUIRED</span>
+                </div>
+                <div class="form-group">
+                    <label for="email_confirmation">Check box to request an Email Confirmation:</label>
+                    <input type="checkbox" id="email_confirmation" name="email_confirmation">
+                </div>
+                <div class="form-group">
+                    <label for="transaction_type">Transaction Type:</label>
+                    <select id="transaction_type" name="transaction_type">
+                        <option value="Search Account">Search Account</option>
+                        <option value="Book Appointment">Book an Appointment</option>
+                        <option value="Cancel Appointment">Cancel an Appointment</option>
+                        <option value="Request Procedure">Request a Procedure</option>
+                        <option value="Cancel Procedure">Cancel a Procedure</option>
+                        <option value="Update Information">Update Patient Information</option>
+                        <option value="Create Account">Create a New Account</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" onclick= return"validate();">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
         <script src = "Project2.js"></script>
         </body>
     </html>
