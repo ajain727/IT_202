@@ -1,0 +1,20 @@
+
+
+#heading span{
+    background-color: purple;
+    color: white;
+    border: solid black;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 500px;
+    height:100px;
+    text-align: center;
+
+}
+
+#mouseTarget{
+    border: none;
+    width: 110px;
+    font-size: 12pt;
+    color: blue;
+}

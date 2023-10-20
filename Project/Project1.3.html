@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
+<html lang="en">
+    <head>
         <link rel="stylesheet" href="Style.css">
-            <title>Receptionist Login</title>
-        </head>
-        <body>
-            <div class="container">
+        <title>Receptionist Login</title>
+    </head>
+    <body>
+        <div class="container">
             <h2>House of Health</h2>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="first_name">First Name:</label>
-                        <input type="text" id="first_name" name="first_name" placeholder = "Example: Peter" required>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" placeholder = "Example: Parker" required>
                         <div>
                             <div class="form-group">
                                 <label for="last_name">Last Name: </label>
@@ -37,12 +37,19 @@
                                 <input type="checkbox" id="email confirmation" name="email confirmation">
                             </div>
                             <div class="form-group">
-                                <label for="transaction_type">Transaction Type:</label>
-                                <select id="transaction_type" name="transaction_type">
-                                    <option value="check-in">Check-In</option>
-                                    <option value="appointment">Schedule Appointment</option>
-                                    <option value="billing"> Billing</option>
-                                </select>
+                                <label>Transaction Type:</label>
+                                <label for="check-in">
+                                    <input type="checkbox" id="check-in" name="transaction_type" value="check-in" required>
+                                    Check-In
+                                </label>
+                                <label for="appointment">
+                                    <input type="checkbox" id="appointment" name="transaction_type" value="appointment">
+                                    Schedule Appointment
+                                </label>
+                                <label for="billing">
+                                    <input type="checkbox" id="billing" name="transaction_type" value="billing">
+                                    Billing
+                                </label>
                             </div>
                             <div class="form-group">
                                 <button type="submit">Submit</button>
@@ -52,7 +59,8 @@
                     </div>
                 </form>
             </div>
-        </body>
-    </html>
+        <script src = "Project2.js"></script>
+    </body>
+</html>
 
 
