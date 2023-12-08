@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #95b84f; background-color: #202020}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #bf6426; background-color: #202020}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #bf6426; background-color: #202020; min-height: 16.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #587647; background-color: #202020}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #85609a; background-color: #202020}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #99a8ba; background-color: #202020}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #99a8ba; background-color: #202020; min-height: 16.0px}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #587647; background-color: #293228}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #febb5b; background-color: #202020}
+    span.s1 {color: #e1b358}
+    span.s2 {color: #acacac}
+    span.s3 {color: #85609a}
+    span.s4 {color: #99a8ba}
+    span.s5 {color: #bf6426}
+    span.s6 {color: #587647}
+    span.s7 {color: #febb5b}
+    span.s8 {color: #85609a; background-color: #202020}
+    span.s9 {color: #99a8ba; background-color: #202020}
+    span.s10 {background-color: #202020}
+    span.s11 {color: #bf6426; background-color: #202020}
+    span.s12 {background-color: #293228}
+    span.s13 {color: #587647; background-color: #293228}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;link </span><span class="s2">rel</span>="stylesheet" <span class="s2">type</span>="text/css" <span class="s2">href</span>="recordStyle.css"<span class="s1">/&gt;</span></p>
+<p class="p2">&lt;?php</p>
+<p class="p3"><br></p>
+<p class="p4"><span class="s3">$host </span><span class="s4">= </span>"sql1.njit.edu"<span class="s5">;</span></p>
+<p class="p5">$username <span class="s4">= </span><span class="s6">"aj727"</span><span class="s5">;</span></p>
+<p class="p4"><span class="s3">$password </span><span class="s4">= </span>"Pallavi@0326"<span class="s5">;</span></p>
+<p class="p5">$database <span class="s4">= </span><span class="s6">"aj727"</span><span class="s5">;</span></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p5">$connection <span class="s4">= </span><span class="s7">mysqli_connect</span><span class="s4">(</span>$host<span class="s5">, </span>$username<span class="s5">, </span>$password<span class="s5">, </span>$database<span class="s4">)</span><span class="s5">;</span></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p5"><span class="s5">if </span><span class="s4">(!</span>$connection<span class="s4">) {</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s5">die</span><span class="s4">(</span>"Database connection failed: " <span class="s4">. </span><span class="s7">mysqli_connect_error</span><span class="s4">())</span><span class="s5">;</span></p>
+<p class="p6">}</p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p8"><span class="s8">$query </span><span class="s9">= </span><span class="s10">"</span>SELECT * FROM Appointments<span class="s10">"</span><span class="s11">;</span></p>
+<p class="p3"><br></p>
+<p class="p8"><span class="s11">echo </span><span class="s10">'</span>&lt;h1&gt;House Of Health&lt;/h1&gt;<span class="s10">'</span><span class="s11">;</span></p>
+<p class="p8"><span class="s11">echo </span><span class="s10">'</span>&lt;div id="content-container"&gt;<span class="s10">'</span><span class="s11">;</span></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p5">$result <span class="s4">= </span><span class="s7">mysqli_query</span><span class="s4">(</span>$connection<span class="s5">, </span>$query<span class="s4">)</span><span class="s5">;</span></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p5"><span class="s5">if </span><span class="s4">(</span>$result<span class="s4">) {</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s5">echo </span>"<span class="s12">&lt;table&gt;</span>"<span class="s5">;</span></p>
+<p class="p8"><span class="s11"><span class="Apple-converted-space">    </span>echo </span><span class="s10">"</span>&lt;tr&gt;&lt;th&gt;Appointment Date&lt;/th&gt;&lt;th&gt;Appointment Type&lt;/th&gt;&lt;th&gt;Procedure Date&lt;/th&gt;&lt;th&gt;Procedure Type&lt;/th&gt;&lt;th&gt;Doctor&lt;/th&gt;&lt;/tr&gt;<span class="s10">"</span><span class="s11">;</span></p>
+<p class="p3"><br></p>
+<p class="p9"><span class="s5"><span class="Apple-converted-space">    </span>while </span><span class="s4">(</span><span class="s3">$row </span><span class="s4">= </span>mysqli_fetch_assoc<span class="s4">(</span><span class="s3">$result</span><span class="s4">)) {</span></p>
+<p class="p6"><span class="Apple-converted-space">        </span><span class="s5">echo </span><span class="s6">"</span><span class="s13">&lt;tr&gt;</span><span class="s6">"</span><span class="s5">;</span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">        </span>echo </span>"<span class="s12">&lt;td&gt;</span>" <span class="s4">. </span><span class="s3">$row</span><span class="s4">[</span>'AppointmentDate'<span class="s4">] . </span>"<span class="s12">&lt;/td&gt;</span>"<span class="s5">;</span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">        </span>echo </span>"<span class="s12">&lt;td&gt;</span>" <span class="s4">. </span><span class="s3">$row</span><span class="s4">[</span>'AppointmentType'<span class="s4">] . </span>"<span class="s12">&lt;/td&gt;</span>"<span class="s5">;</span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">        </span>echo </span>"<span class="s12">&lt;td&gt;</span>" <span class="s4">. </span><span class="s3">$row</span><span class="s4">[</span>'ProcedureDate'<span class="s4">] . </span>"<span class="s12">&lt;/td&gt;</span>"<span class="s5">;</span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">        </span>echo </span>"<span class="s12">&lt;td&gt;</span>" <span class="s4">. </span><span class="s3">$row</span><span class="s4">[</span>'ProcedureType'<span class="s4">] . </span>"<span class="s12">&lt;/td&gt;</span>"<span class="s5">;</span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">        </span>echo </span>"<span class="s12">&lt;td&gt;</span>" <span class="s4">. </span><span class="s3">$row</span><span class="s4">[</span>'DoctorName'<span class="s4">] . </span>"<span class="s12">&lt;/td&gt;</span>"<span class="s5">;</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span>echo <span class="s6">"</span><span class="s13">&lt;/tr&gt;</span><span class="s6">"</span>;</p>
+<p class="p2"><span class="Apple-converted-space">    </span><span class="s4">}</span></p>
+<p class="p7"><br></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s5">echo </span>"<span class="s12">&lt;/table&gt;</span>"<span class="s5">;</span></p>
+<p class="p2"><span class="s4">} </span>else <span class="s4">{</span></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s5">echo </span><span class="s6">"Error: " </span><span class="s4">. </span>mysqli_error<span class="s4">(</span><span class="s3">$connection</span><span class="s4">)</span><span class="s5">;</span></p>
+<p class="p6">}</p>
+<p class="p8"><span class="s11">echo </span><span class="s10">"</span>&lt;button id='homeButton' onclick=<span class="s5">\"</span>window.location.href='https://web.njit.edu/~aj727/DB.html'<span class="s5">\"</span>&gt;Home&lt;/button&gt;<span class="s10">"</span><span class="s11">;</span></p>
+<p class="p2">?&gt;</p>
+</body>
+</html>
